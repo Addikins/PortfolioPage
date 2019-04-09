@@ -34,6 +34,20 @@ hr {
     border-radius: 50%;
     background-color: rgb(4, 218, 255);
 }
+#small-hr {
+    width: 30%;
+    height: 4px;
+    margin-bottom: 25px;
+    opacity: .8;
+    margin-top: 25px;
+}
+
+.header {
+    font-size: 40px;
+}
+.about {
+    font-size: 20px;
+}
 #navbar {
     position: fixed;
     top: 0;
@@ -60,6 +74,11 @@ hr {
     top: 0;
     padding-top: 30vh;
     height: 70vh;
+}
+#profile-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(4, 218, 255);
 }
 #projects {
     min-height: 55vh;
