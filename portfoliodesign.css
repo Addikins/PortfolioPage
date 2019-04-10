@@ -18,7 +18,6 @@ html, body {
     color: rgba(209, 209, 209, 0.842);
     margin: 0;
     background-color: rgb(12, 12, 12);
-
 }
 .main {
     margin-top: 30px;
@@ -96,6 +95,7 @@ hr {
     grid-auto-rows: 300px;
 }
 .project-tile {
+    
 }
 .project-img {
 height: 350px;
@@ -110,3 +110,8 @@ border-radius: 15%;
     color: rgb(4, 218, 255);
 }
 
+@media (min-width: 600px) {
+html, body {
+
+}
+}
