@@ -26,6 +26,9 @@ html, body {
     justify-items: center;
     min-height: 100vh;
 }
+h2 {
+    font-size: 30px;
+}
 hr {
     display: block;
     width: 90%;
@@ -85,7 +88,6 @@ hr {
 }
 #projects {
     margin: 1em;
-    
     align-self: center;
     width: 75%;
     min-height: 55vh;
@@ -111,8 +113,10 @@ border-radius: 15%;
     color: rgb(4, 218, 255);
 }
 
-@media (min-width: 600px) {
-html, body {
+@media (max-width: 600px) {
 
+.project-img {
+    height: 250px;
+    width: 200px;
 }
 }
