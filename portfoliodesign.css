@@ -24,6 +24,7 @@ html, body {
     display: grid;
     align-items: center;
     justify-items: center;
+    min-height: 100vh;
 }
 hr {
     display: block;
@@ -95,7 +96,7 @@ hr {
     grid-auto-rows: 300px;
 }
 .project-tile {
-    
+
 }
 .project-img {
 height: 350px;
