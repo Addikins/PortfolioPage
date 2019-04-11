@@ -90,7 +90,7 @@ hr {
     margin: 1em;
     align-self: center;
     width: 75%;
-    min-height: 55vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
@@ -115,6 +115,13 @@ border-radius: 15%;
 
 @media (max-width: 600px) {
 
+html, body {
+font-size: 20px;
+}
+#welcome-section {
+    padding: 0;
+    height: 100vh;
+}
 .project-img {
     height: 250px;
     width: 200px;
