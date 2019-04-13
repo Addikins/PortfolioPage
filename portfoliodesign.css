@@ -15,16 +15,21 @@
 */
 html, body {
     text-align: center;
-    color: rgba(209, 209, 209, 0.842);
+    color: rgba(0, 0, 0, 0.842);
     margin: 0;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(190, 190, 190);
 }
 .main {
     display: grid;
-    align-items: center;
     justify-items: center;
-    justify-content: center;
     min-height: 100vh;
+}
+.header {
+    font-size: 40px;
+}
+#construction-img {
+    justify-self: center;
+    height: 5em;
 }
 h2 {
     font-size: 30px;
@@ -38,7 +43,7 @@ hr {
     border: transparent;
     border-radius: 50%;
     margin-top: 1em;
-    background-color: rgb(4, 218, 255);
+    background-color: #6351A5;
 }
 #small-hr {
     width: 30%;
@@ -47,9 +52,7 @@ hr {
     margin-top: 1em;
 }
 
-.header {
-    font-size: 40px;
-}
+
 .about {
     display: grid;
     width: 65%;
@@ -59,28 +62,43 @@ hr {
 }
 
 
-#navbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #02738C;
+    background-color: #6351A5;
     overflow: hidden;
     border: transparent;
 }
-#navbar a {
+.navbar a {
     color: #ffffff;
     text-align: center;
+    
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     float: left;
-    padding: 15px 20px;
+    padding: .5em;
+    padding-bottom: 0;
+    height: 2em;
 }
-.navlinks {
+#navlinks {
+float: right;
+padding-right: 1em;
+padding-left: 1em;
+}
+#navlinks img {
+    height: 1.5em;
+}
+#navlinks img:hover {
+    background: #ddd;
+}
+#navlinks a:hover {
+    background:  black;
+}
 
-}
-#navbar a:hover {
+.navbar a:hover {
     background: #ddd;
     color: black;
 }
@@ -90,11 +108,62 @@ hr {
     min-height: 80vh;
     display: grid;
 }
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: minmax(30%, auto);
+    height: minmax(20%, auto);
+    margin: 4em;
+    margin-top: 0;
+}
+.box-column {
+border: 5px solid #6351A5;
+}
+
+#project-break {
+    margin-bottom: 3em;
+}
+.projects {
+    margin-top: 2em;
+    width: 75%;
+    height: minmax(50vh, auto);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: 20em;
+}
+#project-tile {
+border-radius: 25%;
+height: 200px;
+border: 2px solid #6351A5;
+}
+.project-img {
+height: 200px;
+width: 200px;
+border-radius: 5%;
+}
+.project-title {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(140, 115, 230);
+}
+#contact-break {
+    margin-bottom: 3em;
+}
+#contact {
+    top: 0;
+    height: minmax(20vh, auto);
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
 #profile-link {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(4, 218, 255);
+    color: rgb(140, 115, 230);
 }
 #profile-link img {
     height: 2em;
@@ -102,46 +171,9 @@ hr {
 .profile-links {
     justify-self: center;
     width: 30%;
-    display: inline-block;
-    height: 18em;
+    height: minmax(6em, auto);
     margin-bottom: 1em;
 }
-
-#projects {
-    margin-top: 1em;
-    width: 75%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    grid-row-gap: 4em;
-    grid-auto-rows: 300px;
-}
-.project-tile {
-background-color: rgb(1, 57, 70);
-border: 3px solid #04DAF2;
-border-radius: 15%;
-height: 306px;
-}
-.project-img {
-height: 300px;
-width: 300px;
-border: 3px solid #04DAF2;
-border-radius: 15%;
-}
-.project-title {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(4, 218, 255);
-}
-#contact {
-    top: 0;
-    height: 80vh;
-    display: grid;
-    background-color: blue;
-}
-
 
 
 
