@@ -138,7 +138,7 @@ padding-left: 1em;
 }
 .box-column {
 border: 5px solid #6351A5;
-    background: white;
+    background: rgba(255, 255, 255, 0.596);
     padding: 2em;
     padding-bottom: 4em;
 }
@@ -158,7 +158,6 @@ border: 5px solid #6351A5;
 #project-tile {
 border-radius: 25%;
 height: 200px;
-border: 2px solid #6351A5;
 }
 .project-img {
 height: 200px;
@@ -169,7 +168,10 @@ border-radius: 5%;
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
-    color: rgb(140, 115, 230);
+    color: rgb(3, 139, 76);
+}
+.project-title a:hover {
+    color: whitesmoke;
 }
 #contact-break {
     margin-bottom: 3em;
