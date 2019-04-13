@@ -13,6 +13,25 @@
 .2017-Logo-Collection---Dark-Mode-5-hex { color: #0C0C0C; }
 
 */
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid #ffffff;
+    height: 2em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 html, body {
     text-align: center;
     color: rgba(0, 0, 0, 0.842);
@@ -111,7 +130,7 @@ padding-left: 1em;
 .box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    grid-gap: .5em;
     width: minmax(30%, auto);
     height: minmax(20%, auto);
     margin: 4em;
@@ -119,6 +138,9 @@ padding-left: 1em;
 }
 .box-column {
 border: 5px solid #6351A5;
+    background: white;
+    padding: 2em;
+    padding-bottom: 4em;
 }
 
 #project-break {
