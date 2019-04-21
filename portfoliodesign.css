@@ -41,7 +41,8 @@ background-image: -webkit-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca)
     background-image: -ms-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
      background-image: -o-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
         background-image: linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
-}
+background-attachment: fixed;
+    }
 p, h1, h2, body, html, ol, ul, dl, dt, dd, blockquote, figure, fieldset
 legend, textarea, pre, iframe {
     padding: 0;
