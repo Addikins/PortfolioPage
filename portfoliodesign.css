@@ -54,6 +54,9 @@ legend, textarea, pre, iframe {
     display: grid;
     justify-items: center;
     min-height: 100vh;
+    width: 1250px;
+    justify-self: center;
+    justify-content: center;
 }
 .header {
     font-size: 40px;
@@ -166,20 +169,24 @@ border: 5px solid #BDB86B;
 }
 .projects {
     margin-top: 2em;
-    width: 75%;
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+    padding:1em;
     height: minmax(50vh, auto);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr ;
     grid-gap: 1em;
     grid-auto-rows: 20em;
+    margin-left: 25%;
 }
 #project-tile {
-border-radius: 25%;
-height: 200px;
+height: 13em;
+width: 23em;
 }
 .project-img {
-height: 200px;
-width: 200px;
+height:100%;
+width: 100%;
 border-radius: 5%;
 }
 .project-title {
