@@ -31,18 +31,17 @@ body {
     text-align: center;
     font-size: 62.5%;
     color: #000000d7;
-background-image: -webkit-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
-   background-image: -moz-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
-    background-image: -ms-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
-     background-image: -o-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
-        background-image: linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
-background-attachment: fixed;
-    }
+    background-image: -webkit-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
+       background-image: -moz-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
+        background-image: -ms-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
+         background-image: -o-linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
+            background-image: linear-gradient( top, #5e3cda,#6351A5,#7b6bb3,#a79dca);
+    background-attachment: fixed;
+}
 
 * {
     margin: 0;
     padding: 0;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -58,7 +57,6 @@ background-attachment: fixed;
 .navbar a {
     color: #ffffff;
     text-align: center;
-    
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
@@ -124,7 +122,6 @@ hr {
     margin-bottom: 3em;
 }
 
-
 .about {
     display: block;
     width: 80%;
@@ -139,8 +136,6 @@ hr {
     border: 2px solid black;
     border-radius: 15%;
 }
-
-
 
 #welcome-section {
     top: 0;
@@ -180,7 +175,7 @@ border: 5px solid #BDB86B;
     grid-auto-rows: 20em;
 }
 #project-tile {
-height: 13em;
+height: 18em;
 width: 23em;
 }
 .project-img {
@@ -198,14 +193,21 @@ border-radius: 5%;
     color: whitesmoke;
 }
 #contact-break {
-    margin: 0 auto;
-    margin-bottom: 3em;
+    margin: 3em auto;
 }
 #contact {
     margin: 0 auto;
     top: 0;
     height: minmax(20vh, auto);
     width: 80%;
+}
+.profile-links {
+    margin: 4em auto 2em auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5em;
+    height: minmax(6em, auto);
+    width: 50%;
 }
 #profile-link {
     text-decoration: none;
@@ -216,30 +218,22 @@ border-radius: 5%;
 #profile-link img {
     height: 2em;
 }
-.profile-links {
-    margin: 4em auto 2em auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5em;
-    height: minmax(6em, auto);
-    width: 50%;
+
+@media (max-width: 1200px) {
+    html, body {max-width: 100vw;}
+    .main {max-width: 80vw;}
+    .profile-links {width: auto;}
+    #welcome-section {height: 100vh;}
+    .projects {grid-template-columns: repeat(2, 1fr)}
 }
 
-
-
-@media (max-width: 900px) {
-html, body {
-font-size: 20px;
+@media (max-width: 780px) {
+    .navbar a {font-size: 22px;}
 }
-#welcome-section {
-    padding: 0;
-    height: 100vh;
-}
-#projects {
-    grid-template-columns: repeat(2, 1fr)
-}
-.project-img {
-    height: 250px;
-    width: 200px;
-}
+/*TO DO: Fix width proportions when screen size drops below ~690px
+        Currently screen stops auto adjusting at this size. */
+@media (max-width: 690px) {
+    .navbar a {font-size: 18px;}
+    html, body {max-width: 100vw; margin: 0 auto;}
+    .main {max-width: 80vw;}
 }
