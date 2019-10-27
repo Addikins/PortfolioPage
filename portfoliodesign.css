@@ -101,7 +101,7 @@ hr {
 #small-hr {
     width: 30%;
     height: 3.5px;
-    opacity: .8;
+    opacity: 0;
     margin-bottom: 3em;
 }
 .titlehr {
@@ -204,6 +204,10 @@ border-radius: 5%;
 .contact {
     width: 100%;
 }
+.contact p {
+    margin: 1em;
+    font-size: 25px;
+}
 .contact form{
     font-size: 30px;
     text-align: center;
@@ -242,7 +246,7 @@ background-color: #00c9bc;
     margin: 10em auto 2em auto;
     display: grid;
     grid-gap: 5em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 4em;
     grid-auto-columns: 2em;
     width: 25%;
